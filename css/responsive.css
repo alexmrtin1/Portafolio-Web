@@ -1,0 +1,97 @@
+@media screen and (max-width: 1200px) {
+    #systems > h2 {
+        padding-top: 12%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    /* HEADER */
+    header {
+        height: 350px;
+    }
+
+    #portada h1 {
+        font-size: 2.5rem;
+    }
+
+    #portada h2 {
+        font-size: 1.5rem;
+    }
+
+    /* SOBRE MI */
+    #about-me {
+        padding: 50px 0;
+    }
+
+    #about-me img {
+        display: none;
+    }
+
+    #about-me .content {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .words {
+        font-size: 13px;
+    }
+
+    .words span {
+        margin: 0 5px;
+    }
+
+    /* CARTAS */
+    #development {
+        padding: 70px 0;
+    }
+
+    #systems.content {
+	padding: 0;
+    }
+
+    #cards, #on-line-cards {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 230px));
+    }
+
+    #on-line-cards {
+        padding-bottom: 50px;
+    }
+
+    /* EXPERIENCIA */
+    #experience .content > p {
+        max-width: 100%;
+        margin: 0 50px 50px 50px;
+    }
+
+    /* PROYECTOS */
+    .proyect {
+        height: auto;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .proyect img {
+        width: 100%;
+        order: 1;
+    }
+
+    .presentation {
+        max-width: 100%;
+        margin: 50px;
+        order: 2;
+    }
+
+    .title h2 {
+        margin: 0 15px;
+    }
+
+    .title hr {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content > h2 {
+        font-size: 1.2rem;
+    }
+}

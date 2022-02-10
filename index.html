@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Inicio | Gonzalo Martín</title>
+
+    <!-- Espacio para CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- Espacio para fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="dark-bg"></div>
+            <span id="btn" onclick="toggleMenu()"><img src="./img/icons/menu.svg" alt="Icono para abrir el menu"></span>
+
+            <div id="menu" class="hidden">
+                <ul>
+                    <li onclick="toggleMenu()"><img src="./img/icons/close.svg" alt="Icono para cerrar el menu"></li>
+                    <li onclick="toggleMenu()"><a href="#about-me" class="scroll">SOBRE MI</a></li>
+                    <li onclick="toggleMenu()"><a href="#skills" class="scroll">HABILIDADES</a></li>
+                    <li onclick="toggleMenu()"><a href="#experience" class="scroll">EXPERIENCIA</a></li>
+                    <li onclick="toggleMenu()"><a href="#contact" class="scroll">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div id="portada">
+                <h1>GONZALO MARTÍN</h1>
+                <h2>Administrador de sistemas y desarrollador web</h2>
+            </div>
+        </header>
+        <main>
+            <!-- SOBRE MI -->
+            <section id="about-me">
+                <img src="./img/AlexanderWeb.png" alt="Foto de la seccion sobre mi">
+                <div class="content">
+                    <h2>SOBRE MÍ</h2>
+                    <hr>
+                    <p>
+                        ¡Hola! Me llamo Gonzalo y tengo 23 años. Desde que era pequeño me considero un gran fan de la informática. Con 21 años terminé el
+                        <strong>Ciclo Formativo de Grado Superior en Administración en Sistemas Informáticos en Redes</strong>, lo que me permite a día de
+                         hoy trabajar como <strong>Técnico en Sistemas</strong> en la empresa <strong>Idecnet S.A.</strong>.
+                    </p>
+                    <p>
+                        Actualmente, sigo creciendo en el mundo de la informática estudiando el <strong>Ciclo Formativo de Grado Superior en 
+                        Desarrollo de Aplicaciones Web</strong> en el CIFP Villa de Agüimes.
+                    </p>
+                    <p class="words">RESPONSABLE <span>&bull;</span> ORGANIZADO <span>&bull;</span> RESOLUTIVO</p>
+                </div>
+            </section>
+
+            <!-- HABILIDADES -->
+            <section id="skills">
+                <!-- DESARROLLO -->
+                <div class="content" id="development">
+                    <h2>DESARROLLO</h2>
+                    <hr>
+                    <div id="cards">
+                        <div class="card">
+                            <img src="img/icons/desarrollo/html5.svg" alt="Icono para HTML5 y CSS3" class="icon">
+                            <p>HTML5 - CSS3</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/icons/desarrollo/javascript.svg" alt="Icono de javascript" class="icon">
+                            <p>Javascript</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/icons/desarrollo/php.svg" alt="Icono de php" class="icon">
+                            <p>PHP</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/icons/desarrollo/angular.svg" alt="Icono de Angular JS" class="icon">
+                            <p>Angular</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/icons/desarrollo/react.svg" alt="Icono de React JS" class="icon">
+                            <p>React</p>
+                        </div>
+                        <div class="card">
+                            <img src="img/icons/desarrollo/ionic.svg" alt="Icono de Ionic Framework" class="icon">
+                            <p>Ionic</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- SISTEMAS -->
+                <div class="content" id="systems">
+                    <h2>SISTEMAS</h2>
+                    <hr>
+                    <div id="on-line-cards">
+                        <div class="on-line-card">
+                            <img src="img/icons/sistemas/ubuntu.svg" alt="Logo de distribuación de Linux Ubuntu" class="icon">
+                            <p>Ubuntu</p>
+                        </div>
+                        <div class="on-line-card">
+                            <img src="img/icons/sistemas/apache.svg" alt="Logo de Apache para servicio web" class="icon">
+                            <p>Apache</p>
+                        </div>
+                        <div class="on-line-card">
+                            <img src="img/icons/sistemas/mysql.svg" alt="Logo de MySQL para base de datos BBDD" class="icon">
+                            <p>Bases de datos</p>
+                        </div>
+                        <div class="on-line-card">
+                            <img src="img/icons/sistemas/nginx.svg" alt="Logo de Nginx para servicio web" class="icon">
+                            <p>Nginx</p>
+                        </div>
+                        <div class="on-line-card">
+                            <img src="img/icons/sistemas/dns.svg" alt="Logo de DNS para direccionamiento IP" class="icon">
+                            <p>DNS</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCIA -->
+            <section id="experience">
+                <div class="content">
+                    <h2>EXPERIENCIA</h2>
+                    <hr>
+                    <p>
+                        A pesar de estar trabajando actualmente como administrador de sistemas, he ganado terreno en el desarrollo haciendo
+                        pequeños trabajos por cuenta propia. Esto me ha permitido aprender nuevas formas de hacer lo que me gusta.
+                    </p>
+                    <!-- PROYECTOS -->
+                    <section id="proyects">
+                        <!-- HOTELES THE -->
+                        <div class="proyect" id="hoteles-the">
+                            <img src="./img/Pro-HotelesTHe.png" alt="Imagen del proyecto para Hoteles THe">
+                            <div class="presentation">
+                                <div class="title">
+                                    <hr>
+                                    <h2>HOTELES THe</h2>
+                                    <hr>
+                                </div>
+                                <p>
+                                    Durante mis prácticas empresa empecé un gran proyecto que se basaba en replicar las páginas web 
+                                    de la cadena hotelera Hoteles THe. Estas estaban hechas con Wordpress y yo me encargué de pasarlas
+                                    a HTML y CSS con un poco de Javascript.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- GONZALO MARTÍN -->
+                        <div class="proyect" id="hoteles-the">
+                            <div class="presentation">
+                                <div class="title">
+                                    <hr>
+                                    <h2>PORTAFOLIO WEB</h2>
+                                    <hr>
+                                </div>
+                                <p>
+                                    Considero mi portafolio uno de mis proyectos favoritos ya que refleja lo que
+                  		    realmente me gusta, el diseño y la simplicidad. Además de lo divertido que ha sido maquetarla.
+                                </p>
+                            </div>
+                            <img src="./img/Pro-portafolio-web.png" alt="Imagen de mi Portafolio Web">
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!-- CONTACTO -->
+            <section id="contact">
+                <div class="content">
+                    <h2>¿Quieres hablar?</h2>
+                    <hr>
+                    <div id="icons">
+                        <a href="https://es.linkedin.com/in/gonzalo-alexander-martin-ramirez-3b2771152" target="_blank"><img src="./img/icons/contacto/linkedin.svg" alt="Contactar por Linkedin" class="small-icon"></a>
+                        <a href="mailto:dev@gmrtin.es"><img src="./img/icons/contacto/send.svg" alt="Contactar por email" class="small-icon"></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2021</p>
+	    <p>Melania Martín &mdash; Diseñadora gráfica</p>
+            <p>Gonzalo Martín &mdash; Administrador de sistemas y desarrollador web</p>
+        </footer>
+    </div>
+
+    <!-- Espacio para JS -->
+    <script type="text/javascript" src="js/menu.js"></script>
+</body>
+
+</html>
